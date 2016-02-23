@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Object Storage
-permalink: /object-storage/
+permalink: /objectstorage/
 ---
 
 Bluemix Object Storage Service provides unstructured cloud storage to manage your files.
