@@ -16,6 +16,8 @@ In this tutorial you will learn how to deploy the Object Storage Application usi
 
 3. Fork the repository by clicking the `Fork` button to get a copy to your account.
 
+<br>
+
 ####**Create a Bluemix Devops Project based on the Github Repository**
 
 1. Using the same browser, open a new tab and login to [Bluemix Devops](https://hub.jazz.net/). 
@@ -40,6 +42,8 @@ In this tutorial you will learn how to deploy the Object Storage Application usi
 	| **Space** | dev |
 
 7. Click `CREATE`.
+
+<br>
 
 ####**Create a Build Stage**
 
@@ -68,6 +72,8 @@ In this tutorial you will learn how to deploy the Object Storage Application usi
 
 6. Click the `SAVE` button.
 
+<br>
+
 ####**Create a Test Stage**
 
 1. Create another stage by clicking the `+ ADD STAGE` button. Change the stage name `MyStage` to `Test Stage`.
@@ -93,6 +99,7 @@ In this tutorial you will learn how to deploy the Object Storage Application usi
 
 5. Click the `SAVE` button.
 
+<br>
 
 ####**Create a Deploy Stage**
 
@@ -123,6 +130,8 @@ In this tutorial you will learn how to deploy the Object Storage Application usi
 
 5. Click `SAVE`.
 
+<br>
+
 ####**Deploy the Application using Delivery Pipeline**
 
 1. On the `BUILD & DEPLOY` tab, click the `Run Stage` icon of the `Build Stage`.
@@ -149,6 +158,8 @@ In this tutorial you will learn how to deploy the Object Storage Application usi
 11. After clicking the button, you will be redirected to `home.jsp` page and this time, the file you uploaded earlier is displayed on the page.
 
 12. Try to click the `Download` button and check if the application can successfully download the file.
+
+<br>
 
 ####**Analyze how the Object Storage Application works**
 
@@ -201,6 +212,8 @@ The code below shows some of the functions you can do to the service.
     }
 ```
 Before you can upload and download a file, there should be an existing container where you can store and retrieve your files. All the files or objects are created within a container. This tutorial used one container only which is named as `sample`. You can create many containers as long as you do not go beyond your usage limit. In addition, containers work independently to one another. You can upload the same file to different containers since it represents two different objects.
+
+<br>
 
 ####**Delete the Application and Object Storage Service**
 1. Go to [IBM Bluemix](ibm.biz/bluemixph) Website and click the `Dashboard`.
