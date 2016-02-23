@@ -34,14 +34,14 @@ In this tutorial you will learn how to deploy the Object Storage Application usi
 
 6. On the `Select project contents` section, make sure that the following options are selected:
 
-||||
-|---|---|---|
-	|**Private Project**| checked |
-	| **Add features for Scrum development** | checked |
-	| **Make this a Bluemix Project** | checked |
-	| **Region** | IBM Bluemix US South |
-	| **Organization** | you may leave the default selection |		
-	| **Space** | dev |
+	||||
+	|---|---|---|
+		|**Private Project**| checked |
+		| **Add features for Scrum development** | checked |
+		| **Make this a Bluemix Project** | checked |
+		| **Region** | IBM Bluemix US South |
+		| **Organization** | you may leave the default selection |		
+		| **Space** | dev |
 
 7. Click `CREATE`.
 
@@ -55,22 +55,21 @@ In this tutorial you will learn how to deploy the Object Storage Application usi
 
 3. On the `INPUT` tab, set the following values:
 
-||||
-|---|---|---|
-	| **Input Type** | SCM Repository |
-	| **Git URL** | https://github.com/danicacorpuz/Object-Storage.git |
-	| **Branch** | master |
-	| **Stage Trigger** | Run jobs whenever a change is pushed to Git |
+	||||
+	|---|---|---|
+		| **Input Type** | SCM Repository |
+		| **Git URL** | https://github.com/danicacorpuz/Object-Storage.git |
+		| **Branch** | master |
+		| **Stage Trigger** | Run jobs whenever a change is pushed to Git |
 
 4. On the `JOBS` tab, click the `ADD JOB` button and select `BUILD` as the Job Type.
-
 5. Change the job name `Build` to `Gradle Assemble` and set the following values:
 
-||||
-|---|---|---|
-	| **Builder Type** | Gradle |		
-	| **Build Shell Command** | `#!/bin/bash`<br>`export PATH="$GRADLE2_HOME/bin:$PATH"`<br>`gradle assemble`  |	
-	| **Stop running this stage if this job fails** | checked |
+	||||
+	|---|---|---|
+		| **Builder Type** | Gradle |		
+		| **Build Shell Command** | `#!/bin/bash`<br>`export PATH="$GRADLE2_HOME/bin:$PATH"`<br>`gradle assemble`  |	
+		| **Stop running this stage if this job fails** | checked |
 
 6. Click the `SAVE` button.
 
@@ -82,24 +81,23 @@ In this tutorial you will learn how to deploy the Object Storage Application usi
 
 2.  On the `INPUT` tab, set the following values:
 
-||||
-|---|---|---|
-	| **Input Type** | Build Artifacts |
-	| **Stage** | Build Stage |
-	| **Job** | Gradle Assemble |
-	| **Stage Trigger** | Run jobs when the previous stage is completed |
+	||||
+	|---|---|---|
+		| **Input Type** | Build Artifacts |
+		| **Stage** | Build Stage |
+		| **Job** | Gradle Assemble |
+		| **Stage Trigger** | Run jobs when the previous stage is completed |
 
-3. On the `JOBS` tab, click the `ADD JOB` button and select `TEST` as the Job Type.
+3.  On the `JOBS` tab, click the `ADD JOB` button and select `TEST` as the Job Type.
+4.  Change the job name `Test` to `JUnit Test through Gradle` and set the following values:
 
-4. Change the job name `Test` to `JUnit Test through Gradle` and set the following values:
+	||||
+	|---|---|---|
+		| **Tester Type** | Simple |		
+		| **Test Command** | `#!/bin/bash`<br>`gradle test`  |	
+		| **Stop running this stage if this job fails** | checked |
 
-||||
-|---|---|---|
-	| **Tester Type** | Simple |		
-	| **Test Command** | `#!/bin/bash`<br>`gradle test`  |	
-	| **Stop running this stage if this job fails** | checked |
-
-5. Click the `SAVE` button.
+5.  Click the `SAVE` button.
 
 <br>
 
@@ -109,28 +107,28 @@ In this tutorial you will learn how to deploy the Object Storage Application usi
 
 2.  On the `Input` tab, set the following values:
 
-||||
-|---|---|---|
-	| **Input Type** | Build Artifacts |
-	| **Stage** | Build Stage |
-	| **Job** | Gradle Assemble |
-	| **Stage Trigger** | Run jobs when the previous stage is completed |
+	||||
+	|---|---|---|
+		| **Input Type** | Build Artifacts |
+		| **Stage** | Build Stage |
+		| **Job** | Gradle Assemble |
+		| **Stage Trigger** | Run jobs when the previous stage is completed |
 
-3. On the `JOBS` tab, click the `ADD JOB` button and select `DEPLOY` as the Job Type.
+3.  On the `JOBS` tab, click the `ADD JOB` button and select `DEPLOY` as the Job Type.
 
-4. Change the job name `Deploy` to `CF Push to Dev Space` and set the following values:
+4.  Change the job name `Deploy` to `CF Push to Dev Space` and set the following values:
 
-||||
-|---|---|---|
-	| **Deployer Type** | Cloud Foundry |		
-	| **Target** | IBM Bluemix US South - https://api.ng.bluemix.net |		
-	| **Organization** | you may leave the default selection |		
-	| **Space** | dev |	
-	| **Application Name** | blank |		
-	| **Deploy Script** | `#!/bin/bash`<br>`cf push os-<your_name> -m 512M -p build/libs/ObjectStorage.war`  |	
-	| **Stop running this stage if this job fails** | checked |
+	||||
+	|---|---|---|
+		| **Deployer Type** | Cloud Foundry |		
+		| **Target** | IBM Bluemix US South - https://api.ng.bluemix.net |		
+		| **Organization** | you may leave the default selection |		
+		| **Space** | dev |	
+		| **Application Name** | blank |		
+		| **Deploy Script** | `#!/bin/bash`<br>`cf push os-<your_name> -m 512M -p build/libs/ObjectStorage.war`  |	
+		| **Stop running this stage if this job fails** | checked |
 
-5. Click `SAVE`.
+5.  Click `SAVE`.
 
 <br>
 
