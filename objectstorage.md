@@ -77,7 +77,7 @@ In this tutorial you will learn how to deploy the Object Storage Application usi
 
 ####**Create a Test Stage**
 
-1. Create another stage by clicking the `+ ADD STAGE` button. Change the stage name `MyStage` to `Test Stage`.
+1. Create another stage by clicking the `ADD STAGE` button. Change the stage name `MyStage` to `Test Stage`.
 
 2.  On the `INPUT` tab, set the following values:
 
