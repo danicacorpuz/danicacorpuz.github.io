@@ -8,7 +8,9 @@ Bluemix Object Storage Service provides unstructured cloud storage to manage you
 
 In this tutorial you will learn how to deploy the Object Storage Application using Devops Delivery Pipeline and to familiarize yourselves in using Object Storage service as well. 
 
-###**Copy a Github Repository**
+<br>
+
+####**Copy a Github Repository**
 
 1. Open a web browser and login to [Github](https://github.com/). 
 
@@ -18,7 +20,7 @@ In this tutorial you will learn how to deploy the Object Storage Application usi
 
 <br>
 
-###**Create a Bluemix Devops Project based on the Github Repository**
+####**Create a Bluemix Devops Project based on the Github Repository**
 
 1. Using the same browser, open a new tab and login to [Bluemix Devops](https://hub.jazz.net/). 
 
@@ -45,7 +47,7 @@ In this tutorial you will learn how to deploy the Object Storage Application usi
 
 <br>
 
-###**Create a Build Stage**
+####**Create a Build Stage**
 
 1. Click the `BUILD & DEPLOY` button.
 
@@ -74,7 +76,7 @@ In this tutorial you will learn how to deploy the Object Storage Application usi
 
 <br>
 
-###**Create a Test Stage**
+####**Create a Test Stage**
 
 1. Create another stage by clicking the `+ ADD STAGE` button. Change the stage name `MyStage` to `Test Stage`.
 
@@ -101,7 +103,7 @@ In this tutorial you will learn how to deploy the Object Storage Application usi
 
 <br>
 
-###**Create a Deploy Stage**
+####**Create a Deploy Stage**
 
 1. Click the `+ ADD STAGE` button to create a deploy stage. Change the stage name `MyStage` to `Deploy Stage`.
 
@@ -132,7 +134,7 @@ In this tutorial you will learn how to deploy the Object Storage Application usi
 
 <br>
 
-###**Deploy the Application using Delivery Pipeline**
+####**Deploy the Application using Delivery Pipeline**
 
 1. On the `BUILD & DEPLOY` tab, click the `Run Stage` icon of the `Build Stage`.
 
@@ -161,7 +163,7 @@ In this tutorial you will learn how to deploy the Object Storage Application usi
 
 <br>
 
-###**Analyze how the Object Storage Application works**
+####**Analyze how the Object Storage Application works**
 
 In this tutorial, you were able to communicate with the Object Storage service to upload and download files directly. 
 
@@ -215,7 +217,7 @@ Before you can upload and download a file, there should be an existing container
 
 <br>
 
-###**Delete the Application and Object Storage Service**
+####**Delete the Application and Object Storage Service**
 1. Go to [IBM Bluemix](ibm.biz/bluemixph) Website and click the `Dashboard`.
 2. From the `Applications` section, click the `gear` icon in the widget of the `os-<your_name>` application.
 3. Select the `Delete App` from the list.
