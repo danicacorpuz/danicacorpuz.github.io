@@ -165,7 +165,7 @@ In this tutorial you will learn how to deploy the Object Storage Application usi
 
 In this tutorial, you were able to communicate with the Object Storage service to upload and download files directly. 
 
-The code shown below shows the connection to the service.  The credentials needed to successfully connect to the service are `auth_url`, `userId`, `password`, `domainName`, and `project`.  The domainName and project attributes are passed to Identifier class to create an Identifier which is a name based authentication.
+The code shown below shows the connection to the service.  The service credentials needed to successfully connect to the service are `auth_url`, `userId`, `password`, `domainName`, and `project`.  The domainName and project attributes are passed to Identifier class to create an Identifier which is a name based authentication.
 
 ```text
 Identifier domainIdent = Identifier.byName(domainName);
