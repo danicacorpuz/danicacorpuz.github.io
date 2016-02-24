@@ -4,7 +4,7 @@ title: Object Storage
 permalink: /objectstorage/
 ---
 
-Download PPT [here](danicacorpuz.github.io/object.storage.ppt.pptx)
+Download PPT [here](danicacorpuz.github.io/object.storage.ppt.pptx?raw=true)
 
 Bluemix Object Storage Service provides unstructured cloud storage to manage your files.
 
