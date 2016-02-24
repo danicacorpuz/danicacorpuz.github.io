@@ -4,6 +4,8 @@ title: Object Storage
 permalink: /objectstorage/
 ---
 
+Download PPT [here](https://github.com/danicacorpuz/danicacorpuz.github.io/blob/master/object.storage.ppt.pptx)
+
 Bluemix Object Storage Service provides unstructured cloud storage to manage your files.
 
 In this tutorial you will learn how to deploy the Object Storage Application using Devops Delivery Pipeline and to familiarize yourselves in using Object Storage service as well. 
@@ -163,7 +165,14 @@ In this tutorial you will learn how to deploy the Object Storage Application usi
 
 ####**Analyze how the Object Storage Application works**
 
-In this tutorial, you were able to communicate with the Object Storage service to upload and download files directly. 
+In this tutorial, you were able to communicate with the Object Storage service to upload and download files directly. The sample application used OpenStack4j API to connect to the service. To solve the dependency problem in Gradle, the following libraries are required:
+
+```text
+	compile 'org.pacesys:openstack4j:2.10'
+	compile 'org.pacesys.openstack4j.connectors:openstack4j-jersey2:2.10'
+	compile 'org.pacesys.openstack4j.connectors:openstack4j-httpclient:2.10'
+	
+```
 
 The code shown below shows the connection to the service.  The service credentials needed to successfully connect to the service are `auth_url`, `userId`, `password`, `domainName`, and `project`.  The domainName and project attributes are passed to Identifier class to create an Identifier which is a name based authentication.
 
