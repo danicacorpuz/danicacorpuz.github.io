@@ -60,7 +60,7 @@ In this tutorial you will learn how to deploy the Object Storage Application usi
 	||||
 	|---|---|---|
 		| **Input Type** | SCM Repository |
-		| **Git URL** | https://github.com/danicacorpuz/Object-Storage.git |
+		| **Git URL** | https://github.com/your_username/Object-Storage.git |
 		| **Branch** | master |
 		| **Stage Trigger** | Run jobs whenever a change is pushed to Git |
 
