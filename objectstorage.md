@@ -153,6 +153,11 @@ In this tutorial you will learn how to deploy the Object Storage Application usi
 7. Click `CREATE`. When asked to restage your application, click the `RESTAGE` button. Wait for your application to restage.
 8. Open a new tab and go to `http://os-<your_name>.mybluemix.net/home.jsp` to test if the application can connect to the Object Storage service. 
 
+	> If you received an error, clear your web browser's cache.
+	> Go to Bluemix and click the widget of your application.
+	> In the App Health section, restart your application by clicking the `RESTART` button.
+	> Once done, click the route link and add `/home.jsp`.
+
 9. Choose any file you want to upload by clicking the `Choose File` button.
 
 10. Click the `Upload File` button.
