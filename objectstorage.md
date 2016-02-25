@@ -138,7 +138,7 @@ In this tutorial you will learn how to deploy the Object Storage Application usi
 
 1. On the `BUILD & DEPLOY` tab, click the `Run Stage` icon of the `Build Stage`.
 
-	>Make sure all the stages are completed and passed before you proceed to the next step.
+	>Make sure all the stages are passed before you proceed to the next step.
 
 2. Go to [IBM Bluemix](ibm.biz/bluemixph) Website and login.
 
